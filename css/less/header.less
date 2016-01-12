@@ -1,0 +1,168 @@
+.header{
+    display: block;
+    width: 100%;
+}
+.top-nav{
+    display: block;
+    background: #b6aff0;
+    color: #fff;
+    height: 46px;
+    line-height: 46px;
+    .top-link{
+        span{
+            display: inline-block;
+            margin: 0 6px;
+            a{
+                color: #fff;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.top-head{
+    display: block;
+    height: 162px;
+    background: #fff;
+    .head-logo{
+        display: block;
+        img{
+            position: relative;
+            top: 14px;
+            left: 6px;
+        }
+        span{
+            display: inline-block;
+            position: relative;
+            top: -10px;
+            left: -284px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #38396e;
+        }
+    }
+    .head-info{
+        display: block;
+        .head-mail{
+            margin-top: 64px;
+            font-size: 18px;
+            margin-right: 16px;
+            a{
+                display: block;
+                height: 36px;
+                line-height: 36px;
+                color: #38396e;
+                text-indent: 8px;
+                i{
+                    display: block;
+                    float: left;
+                    width: 36px;
+                    height: 36px;
+                    background: #b6aff0 url(../../images/icon-head-mail.png) center center no-repeat;
+                    border-radius: 36px;
+                }
+            }
+            a:hover{
+                i{
+                    background: #38396e url(../../images/icon-head-mail.png) center center no-repeat;;
+                    transition:.2s ease-out;
+                    cursor:pointer;
+                    white-space:nowrap;
+                }
+            }
+        }
+        .head-declare{
+            margin-top: 64px;
+            font-size: 18px;
+            margin-right: 16px;
+            a{
+                display: block;
+                height: 36px;
+                line-height: 36px;
+                color: #38396e;
+                text-indent: 8px;
+                i{
+                    display: block;
+                    float: left;
+                    width: 36px;
+                    height: 36px;
+                    background: #b6aff0 url(../../images/icon-head-declare.png) center center no-repeat;
+                    border-radius: 36px;
+                }
+            }
+            a:hover{
+                i{
+                    background: #38396e url(../../images/icon-head-declare.png) center center no-repeat;;
+                    transition:.2s ease-out;
+                    cursor:pointer;
+                    white-space:nowrap;
+                }
+            }
+        }
+        .head-search{
+            display: inline-block;
+            width: 288px;
+            height: 44px;
+            border-radius: 18px;
+            background: #b6aff0;
+            color: #fff;
+            margin-top: 60px;
+            input{
+                border: none;
+                background: none;
+                width: 210px;
+                height: 42px;
+                margin-left: 20px;
+                line-height: 42px;
+                font-size: 14px;
+                color: #fff;
+                border-radius: 18px;
+                outline:none;
+            }
+            a{
+                display: inline-block;
+                float: right;
+                width: 58px;
+                height: 44px;
+                background: url(../../images/btn-search.png) center center no-repeat;
+                text-indent: -9999px;
+            }
+            a:hover{
+                background: url(../../images/btn-search-hov.png) center center no-repeat;
+                transition:.2s ease-out;
+                cursor:pointer;
+                white-space:nowrap;
+            }
+        }
+    }
+}
+.nav{
+    li{
+        display: block;
+        float: left;
+        width: 132px;
+        a{
+            display: inline-block;
+            width: 133px;
+            height: 58px;
+            color: #fff;
+            background: none;
+        }
+        a:hover{
+            background: #64499a;
+        }
+        span{
+            display: inline-block;
+            width: 132px;
+            height: 38px;
+            line-height: 38px;
+            border-left: 1px solid #b6aff0;
+            border-right: 1px solid #64499a;
+            margin-top: 10px;
+        }
+    }
+    .active a{
+        background: #64499a;
+    }
+}
