@@ -161,6 +161,25 @@
             border-right: 1px solid #64499a;
             margin-top: 10px;
         }
+        ul{
+            background: rgba(100,73,154,0.8);
+            display: none;
+            width: 100%;
+            position:absolute;
+            z-index:99;
+            left: 0;
+            padding-left: 200px;
+            >li{
+                a{
+                    font-size: 20px;
+                    font-weight: normal;
+                }
+                a:hover{
+                    background: none;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
     .active a{
         background: #64499a;
