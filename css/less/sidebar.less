@@ -1,53 +1,55 @@
 .sidebar{
     display: block;
-    width: 322px;
+    width: 300px;
     background: #fff;
     margin-bottom: 20px;
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
     .menu-tit{
-        height: 50px;
-        width: 322px;
+        height: 46px;
+        width: 300px;
         display: inline-block;
-        border-bottom: 1px solid #084f23;
-        background: url(../../images/side-menutit.png) 14px center no-repeat;
-        text-indent: 56px;
-        line-height: 50px;
-        font-size: 24px;
+        background: #8a8ce6 url(../../images/side-menutit.png) right 18px center no-repeat;
+        line-height: 46px;
+        font-size: 20px;
+        text-indent: 18px;
         color: #fff;
     }
 }
 /*left*/
 .leftsidebar_box{
     display: block;
-    height: 860px;
+    min-height: 460px;
 }
 .leftsidebar_box dt{
     padding-right:10px;
-    color:#fff;
+    color:#38396e;
     text-indent:40px;
     font-size:18px;
     position:relative;
-    line-height:58px;
+    line-height:48px;
     cursor:pointer;
-    border-bottom: 1px solid #084f23;
+    border-bottom: 1px solid #64499a;
 }
 .leftsidebar_box dt img{
     position: absolute;
     right: 24px;
-    top: 24px;
+    top: 16px;
 }
 .leftsidebar_box dd{
-    background:#113d2b;
+    background:#fff;
     text-indent:40px;
+    border-bottom: 1px solid #ddd;
 }
 .leftsidebar_box dd a{
     display: block;
-    width: 322px;
-    color:#fff;
-    line-height:40px;
+    width: 300px;
+    color: #64499a;
+    line-height:48px;
 }
 .leftsidebar_box dd a:hover{
-    background: #084f23;
+    text-decoration: underline;
 }
 .leftsidebar_box dl dd:last-child{
-    padding-bottom:10px;
+    padding-bottom: 2px;
 }

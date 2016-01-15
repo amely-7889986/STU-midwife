@@ -6,6 +6,97 @@
         color: #64499a;
     }
     i{
-        background: url(../../images/)
+        display: inline-block;
+        width: 14px;
+        height: 15px;
+        margin: 0 14px;
+        background: url(../../images/side-arrow-up.png) center center no-repeat;
+    }
+}
+.page-list{
+    display: block;
+    width: 884px;
+    background: #fff;
+    -moz-box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+    .page-li{
+        display: block;
+        padding: 0 20px;
+        li{
+           display: inline-block;
+           width: 844px;
+           padding: 28px 0;
+           border-bottom: 1px solid #ddd;
+           .li-pic img{
+            display: inline-block;
+            width: 126px;
+            height: 85px;
+            }
+            .li-info{
+                margin-left: 14px;
+                width: 704px;
+                overflow: hidden;
+                .li-tit{
+                    a{
+                        font-size: 18px;
+                        height: 24px;
+                        line-height: 24px;
+                        color: #38396e;
+                        padding-left: 10px;
+                        background: url(../../images/icon-point.png) left center no-repeat;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                    span{
+                        font-size: 12px;
+                        color: #e6a640;
+                        height: 24px;
+                        line-height: 24px;
+                        float: right;
+                    }
+                }
+                .li-detail{
+                    display: block;
+                    margin-top: 12px;
+                    font-size: 14px;
+                    color: #615e58;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+    .page-num-link{
+        display: block;
+        text-align: center;
+        margin-top: 26px;
+        margin-bottom: 24px;
+        span{
+            display: inline-block;
+            font-size: 14px;
+            color: #8a8ce6;
+            margin-right: 4px;
+            a{
+                display: inline-block;
+                padding: 10px 12px;
+                color: #fff;
+                background: #8a8ce6;
+                border-radius: 3px;
+            }
+            a:hover{
+                background: #1e2347;
+                transition:.2s ease-out;
+            }
+            .active{
+                background: #1e2347;
+            }
+        }
+        input{
+            width: 68px;
+            height: 28px;
+            border: 1px solid #8a8ce6;
+            border-radius: 3px;
+        }
     }
 }
