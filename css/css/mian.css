@@ -263,7 +263,7 @@ body {
   background: #e6e8eb;
 }
 a {
-  color: #1e2347;
+  color: inherit;
   text-decoration: none;
 }
 table {
@@ -538,6 +538,7 @@ textarea:-ms-input-placeholder {
   width: 288px;
   height: 44px;
   border-radius: 18px;
+  overflow: hidden;
   background: #b6aff0;
   color: #fff;
   margin-top: 60px;
@@ -560,10 +561,11 @@ textarea:-ms-input-placeholder {
   width: 58px;
   height: 44px;
   background: url(../../images/btn-search.png) center center no-repeat;
+  background-color: #8a8ce6;
   text-indent: -9999px;
 }
 .top-head .head-info .head-search a:hover {
-  background: url(../../images/btn-search-hov.png) center center no-repeat;
+  background-color: #38396e;
   transition: 0.2s ease-out;
   cursor: pointer;
   white-space: nowrap;
@@ -594,6 +596,9 @@ textarea:-ms-input-placeholder {
 }
 .nav li ul {
   background: rgba(100, 73, 154, 0.8);
+  background: #64499a;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
   display: none;
   width: 100%;
   position: absolute;
@@ -609,7 +614,7 @@ textarea:-ms-input-placeholder {
   background: none;
   text-decoration: underline;
 }
-.nav .active a {
+.nav .active > a {
   background: #64499a;
 }
 .l-banner-box {
@@ -872,7 +877,7 @@ textarea:-ms-input-placeholder {
   width: 142px;
   height: 64px;
   position: relative;
-  top: -68px;
+  top: -64px;
   left: 0;
   background: #f2f2f2;
   overflow: hidden;
@@ -884,7 +889,7 @@ textarea:-ms-input-placeholder {
   text-align: center;
   color: #39393c;
   font-size: 18px;
-  padding-top: 8px;
+  padding-top: 4px;
 }
 .col-team .teacherpic .col-team-pic .col-team-name > p {
   font-size: 14px;
@@ -899,6 +904,9 @@ textarea:-ms-input-placeholder {
   height: 4px;
   width: 142px;
   background: rgba(56, 57, 110, 0.8);
+  background: #38396e;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
   color: #fff;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -997,9 +1005,6 @@ textarea:-ms-input-placeholder {
   -o-text-overflow: ellipsis;
   white-space: nowrap;
 }
-.col-lglist .list-tit a:hover {
-  text-decoration: underline;
-}
 .col-lglist .col-datalist {
   width: 354px;
   display: inline-block;
@@ -1067,14 +1072,17 @@ textarea:-ms-input-placeholder {
   position: relative;
   right: 0;
 }
-.col-picwall .wrap li .wrap-info a:hover span {
+.col-picwall .wrap li :hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.col-picwall .wrap li :hover a span {
   color: rgba(255, 255, 255, 0.8);
 }
-.col-picwall .wrap li .wrap-info a:hover i {
+.col-picwall .wrap li :hover a i {
   position: relative;
   right: 8px;
   transition: 0.2s ease-out;
-  cursor: pointer;
 }
 .col-picwall input {
   display: inline-block;
@@ -1281,6 +1289,8 @@ textarea:-ms-input-placeholder {
   width: 300px;
   display: inline-block;
   background: #8a8ce6 url(../../images/side-menutit.png) right 18px center no-repeat;
+  background-color: #8a8ce6;
+  background-image: url(../../images/side-menutit.png) right 18px center no-repeat;
   line-height: 46px;
   font-size: 20px;
   text-indent: 18px;
@@ -1294,15 +1304,25 @@ textarea:-ms-input-placeholder {
 .leftsidebar_box dt {
   padding-right: 10px;
   color: #38396e;
-  text-indent: 40px;
+  padding-left: 48px;
   font-size: 18px;
   position: relative;
   line-height: 48px;
   cursor: pointer;
   border-bottom: 1px solid #64499a;
 }
-.leftsidebar_box dt a:hover {
-  color: #fff;
+.leftsidebar_box .active {
+  display: block;
+  padding-right: 10px;
+  color: #fff !important;
+  padding-left: 48px;
+  font-size: 18px;
+  position: relative;
+  line-height: 48px;
+  cursor: pointer;
+  background: #38396e !important;
+  border-bottom: 1px solid #64499a;
+  border-left: 8px solid #e6a640 !important;
 }
 .leftsidebar_box dt img {
   position: absolute;
@@ -1430,7 +1450,7 @@ textarea:-ms-input-placeholder {
   width: 165px;
   height: 64px;
   position: relative;
-  top: -68px;
+  top: -64px;
   left: 0;
   background: #f2f2f2;
   overflow: hidden;
@@ -1442,7 +1462,7 @@ textarea:-ms-input-placeholder {
   text-align: center;
   color: #39393c;
   font-size: 18px;
-  padding-top: 6px;
+  padding-top: 4px;
 }
 .team-li-member .teacherpic .col-team-pic .col-team-name > p {
   font-size: 14px;
@@ -1456,7 +1476,10 @@ textarea:-ms-input-placeholder {
   bottom: 0px;
   height: 4px;
   width: 165px;
-  background: rgba(56, 57, 110, 0.8);
+  background: #38396e;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  color: #fff;
   overflow: hidden;
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
@@ -1502,7 +1525,7 @@ textarea:-ms-input-placeholder {
   width: 836px;
   padding: 20px 24px;
   font-size: 14px;
-  text-indent: 28px;
+  line-height: 24px;
 }
 .pl-info-p > p {
   margin-bottom: 8px;
@@ -1598,4 +1621,87 @@ textarea:-ms-input-placeholder {
 }
 .pd24 {
   padding-bottom: 24px;
+}
+.login {
+  background: url(../../word/login-bg.png) center center no-repeat;
+  width: 100%;
+  height: 508px;
+}
+.login-section {
+  display: block;
+  background: rgba(70, 82, 157, 0.5);
+  filter: alpha(opacity=50);
+  border-radius: 10px;
+  padding: 30px 62px;
+  margin-top: 24px;
+}
+.login-section .login-iden {
+  width: 356px;
+  height: 42px;
+  display: block;
+}
+.login-section .login-iden span {
+  background: #5b6399;
+  display: inline-block;
+  width: 130px;
+  line-height: 42px;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  float: left;
+}
+.login-section .login-iden select {
+  display: inline-block;
+  width: 226px;
+  float: left;
+  height: 42px;
+  outline: none;
+  background: #fff;
+  color: #e6a640;
+  padding-left: 80px;
+  font-size: 18px;
+  border: none;
+}
+.login-section .login-iden select option {
+  display: inline-block;
+  color: #e6a640;
+  font-size: 18px;
+  border: none;
+}
+.login-section .login-input {
+  display: block;
+  width: 356px;
+  height: 42px;
+  background-color: #b3bee2;
+  margin-top: 24px;
+}
+.login-section .login-input input {
+  display: inline-block;
+  margin-left: 48px;
+  height: 42px;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+}
+.login-section a {
+  margin-top: 12px;
+  color: #fff;
+}
+.login-section .login-name {
+  background: url(../../images/icon-name.png) 10px center no-repeat;
+  background-color: #b3bee2;
+}
+.login-section .login-key {
+  background: url(../../images/icon-key.png) 10px center no-repeat;
+  background-color: #b3bee2;
+}
+.login-section .login-button {
+  display: block;
+}
+.login-section .login-button a {
+  display: inline-block;
+  height: 42px;
+  border-radius: 3px;
 }

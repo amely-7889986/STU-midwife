@@ -10,6 +10,8 @@
         width: 300px;
         display: inline-block;
         background: #8a8ce6 url(../../images/side-menutit.png) right 18px center no-repeat;
+        background-color: #8a8ce6;
+        background-image: url(../../images/side-menutit.png) right 18px center no-repeat;
         line-height: 46px;
         font-size: 20px;
         text-indent: 18px;
@@ -24,15 +26,25 @@
 .leftsidebar_box dt{
     padding-right:10px;
     color:#38396e;
-    text-indent:40px;
+    padding-left: 48px;
     font-size:18px;
     position:relative;
     line-height:48px;
     cursor:pointer;
     border-bottom: 1px solid #64499a;
 }
-.leftsidebar_box dt a:hover{
-    color: #fff;
+.leftsidebar_box .active{
+    display: block;
+    padding-right:10px;
+    color: #fff !important;
+    padding-left: 48px;
+    font-size:18px;
+    position:relative;
+    line-height:48px;
+    cursor:pointer;
+    background: #38396e !important;
+    border-bottom: 1px solid #64499a;
+    border-left: 8px solid #e6a640 !important;
 }
 .leftsidebar_box dt img{
     position: absolute;

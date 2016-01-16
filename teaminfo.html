@@ -15,9 +15,9 @@
         <div class="l-left">欢迎访问南方医科大学助产教学团队！</div>
         <div class="top-link l-right">
           <span>2015年12月16日 星期三</span><span>|</span>
-          <span><a href="">联系我们</a></span><span>|</span>
-          <span><a href="">登  录</a></span><span>|</span>
-          <span><a href="">注  册</a></span>
+          <span><a href="#">联系我们</a></span><span>|</span>
+          <span><a href="login.html">登  录</a></span><span>|</span>
+          <span><a href="register.html">注  册</a></span>
         </div>
       </div>
     </div>
@@ -28,19 +28,19 @@
         <span>—— 助产教学团队</span>
       </div>
       <div class="head-info l-right">
-        <div class="head-mail l-left"><a href=""><i></i>校长邮箱</a></div>
-        <div class="head-declare l-left"><a href=""><i></i>申报资料</a></div>
+        <div class="head-mail l-left"><a href="#"><i></i>校长邮箱</a></div>
+        <div class="head-declare l-left"><a href="#"><i></i>申报资料</a></div>
         <div class="head-search l-left">
           <input type="text">
-          <a href="" class="btn-search">搜索</a>
+          <a href="#" class="btn-search">搜索</a>
         </div>
       </div>
     </div>
     </div>
     <div class="nav">
       <ul class="mian" id="nav_all">
-        <li class="active"><a href="index.html"><span  style="border-left: none;">首页</span></a></li>
-        <li>
+        <li><a href="index.html"><span  style="border-left: none;">首页</span></a></li>
+        <li class="active">
           <a href="teamlist.html"><span>助产团队</span></a>
         </li>
         <li>
@@ -95,23 +95,23 @@
       <div class="menu-tit">助产团队</div>
       <div class="leftsidebar_box">
         <dl>
-          <dt onClick="changeImage()">助产团队一<img src="images/side-arrow-up.png"></dt>
+          <dt class="active"><a href="teamlist.html">助产团队一</a><img src="images/side-arrow-up.png"></dt>
         </dl>
   
         <dl>
-          <dt onClick="changeImage()">助产团队二<img src="images/side-arrow-up.png"></dt>
+          <dt><a href="teamlist.html">助产团队二</a><img src="images/side-arrow-up.png"></dt>
         </dl>
   
         <dl>
-          <dt onClick="changeImage()">助产团队三<img src="images/side-arrow-up.png"></dt>
+          <dt><a href="teamlist.html">助产团队三</a><img src="images/side-arrow-up.png"></dt>
         </dl>
   
         <dl>
-          <dt onClick="changeImage()">助产团队四<img src="images/side-arrow-up.png"></dt>
+          <dt><a href="teamlist.html">助产团队四</a><img src="images/side-arrow-up.png"></dt>
         </dl>
 
         <dl>
-          <dt onClick="changeImage()">助产团队五<img src="images/side-arrow-up.png"></dt>
+          <dt><a href="teamlist.html">助产团队五</a><img src="images/side-arrow-up.png"></dt>
         </dl>
   
       </div>
@@ -231,17 +231,17 @@
           <div class="f-tit">友情链接</div>
           <div class="f-link">
             <ul>
-              <li><a href="">南方医科大学</a></li>
-              <li><a href="">广东省卫生厅</a></li>
-              <li><a href="">文献保障</a></li>
-              <li><a href="">珠江医院</a></li>
-              <li><a href="">南方医院</a></li>
-              <li><a href="">中华护理学会</a></li>
-              <li><a href="">岭南护理网</a></li>
-              <li><a href="">广东省教育厅</a></li>
-              <li><a href="">广东省科学技术厅</a></li>
-              <li><a href="">中华人民共和国卫生部</a></li>
-              <li><a href="">世界卫生组织</a></li>
+              <li><a href="#">南方医科大学</a></li>
+              <li><a href="#">广东省卫生厅</a></li>
+              <li><a href="#">文献保障</a></li>
+              <li><a href="#">珠江医院</a></li>
+              <li><a href="#">南方医院</a></li>
+              <li><a href="#">中华护理学会</a></li>
+              <li><a href="#">岭南护理网</a></li>
+              <li><a href="#">广东省教育厅</a></li>
+              <li><a href="#">广东省科学技术厅</a></li>
+              <li><a href="#">中华人民共和国卫生部</a></li>
+              <li><a href="#">世界卫生组织</a></li>
             </ul>
           </div>
         </div>
@@ -273,7 +273,6 @@
 <script type="text/javascript">
 //侧边栏下拉
 $(".leftsidebar_box dt").css({"background-color":"#fff","color":"#38396e"});
-$(".leftsidebar_box dt img").attr("src","images/side-arrow-up.png");
 $(function(){
   $(".leftsidebar_box dd").hide();
   $(".leftsidebar_box dt").click(function(){

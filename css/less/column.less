@@ -86,7 +86,7 @@
                 width: 142px;
                 height: 64px;
                 position: relative;
-                top: -68px;
+                top: -64px;
                 left: 0;
                 background: #f2f2f2;
                 overflow: hidden;
@@ -97,7 +97,7 @@
                     text-align: center;
                     color: #39393c;
                     font-size: 18px;
-                    padding-top: 8px;
+                    padding-top: 4px;
                 }
                 >p{
                     font-size: 14px;
@@ -113,6 +113,9 @@
                 height: 4px;
                 width: 142px;
                 background: rgba(56,57,110,0.8);
+                background: #38396e;
+                opacity: 0.8;
+                filter: alpha(opacity=80);
                 color: #fff;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -213,9 +216,6 @@
          -o-text-overflow: ellipsis;
         white-space: nowrap;
     }
-    .list-tit a:hover{
-        text-decoration: underline;
-    }
     .col-datalist{
         width: 354px;
         display: inline-block;
@@ -282,7 +282,11 @@
                         right: 0;
                     }
                 }
-                a:hover{
+            }
+            :hover{
+                cursor:pointer;
+                text-decoration: underline;
+                a{
                     span{
                         color: rgba(255,255,255,0.8);
                     }
@@ -290,7 +294,6 @@
                         position: relative;
                         right: 8px;
                         transition:.2s ease-out;
-                        cursor:pointer;
                     }
                 }
             }

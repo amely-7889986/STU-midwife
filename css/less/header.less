@@ -105,6 +105,7 @@
             width: 288px;
             height: 44px;
             border-radius: 18px;
+            overflow: hidden;
             background: #b6aff0;
             color: #fff;
             margin-top: 60px;
@@ -126,10 +127,11 @@
                 width: 58px;
                 height: 44px;
                 background: url(../../images/btn-search.png) center center no-repeat;
+                background-color: #8a8ce6;
                 text-indent: -9999px;
             }
             a:hover{
-                background: url(../../images/btn-search-hov.png) center center no-repeat;
+                background-color: #38396e;
                 transition:.2s ease-out;
                 cursor:pointer;
                 white-space:nowrap;
@@ -163,6 +165,9 @@
         }
         ul{
             background: rgba(100,73,154,0.8);
+            background: #64499a;
+            opacity: 0.8;
+            filter: alpha(opacity=80);
             display: none;
             width: 100%;
             position:absolute;
@@ -181,7 +186,7 @@
             }
         }
     }
-    .active a{
+    .active >a{
         background: #64499a;
     }
 }
