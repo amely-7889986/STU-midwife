@@ -905,17 +905,20 @@ textarea:-ms-input-placeholder {
   -o-text-overflow: ellipsis;
   white-space: normal;
 }
-.col-team .teacherpic .col-team-pic .txt h3 {
+.col-team .teacherpic .col-team-pic .txt a {
+  color: #fff;
+}
+.col-team .teacherpic .col-team-pic .txt a h3 {
   font-size: 18px;
   text-align: center;
   margin-top: 8px;
 }
-.col-team .teacherpic .col-team-pic .txt h4 {
+.col-team .teacherpic .col-team-pic .txt a h4 {
   font-size: 14px;
   padding: 4px 8px;
   line-height: 18px;
 }
-.col-team .teacherpic .col-team-pic .txt > p {
+.col-team .teacherpic .col-team-pic .txt a > p {
   font-size: 12px;
   padding: 4px 8px;
   line-height: 14px;
@@ -1297,6 +1300,9 @@ textarea:-ms-input-placeholder {
   line-height: 48px;
   cursor: pointer;
   border-bottom: 1px solid #64499a;
+}
+.leftsidebar_box dt a:hover {
+  color: #fff;
 }
 .leftsidebar_box dt img {
   position: absolute;
