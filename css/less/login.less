@@ -1,4 +1,4 @@
-//登录页面样式
+//登录注册页面样式
 .login{
     background: url(../../word/login-bg.png) center center no-repeat;
     width: 100%;
@@ -6,20 +6,22 @@
 }
 .login-section{
     display: block;
-    background: rgba(70,82,157,0.5);
-    filter: alpha(opacity=50);
+    background: rgba(70,82,157,0.8);
+    background: #8d99ce;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
     border-radius: 10px;
     padding: 30px 62px;
-    margin-top: 24px;
+    margin-top: 64px;
     .login-iden{
         width: 356px;
-        height: 42px;
+        height: 48px;
         display: block;
         span{
             background: #5b6399;
             display: inline-block;
             width: 130px;
-            line-height: 42px;
+            line-height: 48px;
             font-size: 18px;
             color: #fff;
             text-align: center;
@@ -29,7 +31,9 @@
             display: inline-block;
             width: 226px;
             float: left;
-            height: 42px;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
             outline: none;
             background: #fff;
             color: #e6a640;
@@ -41,27 +45,32 @@
                 color: #e6a640;
                 font-size: 18px;
                 border: none;
+                height: 48px;
+                line-height: 48px;
             }
         }
     }
     .login-input{
         display: block;
         width: 356px;
-        height: 42px;
+        height: 48px;
         background-color: #b3bee2;
         margin-top: 24px;
         input{
             display: inline-block;
             margin-left: 48px;
-            height: 42px;
+            height: 48px;
+            line-height: 48px;
             background: none;
             border: none;
             outline: none;
             font-size: 18px;
             color: #fff;
+            .placeholder(#6b74b0);
         }
     }
-    a{
+    >a{
+        display: inline-block;
         margin-top: 12px;
         color: #fff;
     }
@@ -73,12 +82,40 @@
         background: url(../../images/icon-key.png) 10px center no-repeat;
         background-color: #b3bee2;
     }
+    .login-keyconfirm{
+        background: url(../../images/icon-keyconfirm.png) 10px center no-repeat;
+        background-color: #b3bee2;
+    }
     .login-button{
         display: block;
+        margin-top: 44px;
         a{
             display: inline-block;
-            height: 42px;
             border-radius: 3px;
+            font-size: 18px;
+            padding: 14px 42px;
+            color: #fff;
+        }
+        .btn-login{
+            background: #e6a640;
+        }
+        .btn-register{
+            background: #64499a;
+            float: right;
+        }
+    }
+    .register-button{
+        display: inline-block;
+        margin-top: 24px;
+        background: #e6a640;
+        text-align: center;
+        margin-left: 68px;
+        font-size: 18px;
+        border-radius: 3px;
+        padding: 14px 74px;
+        a{
+            display: inline-block;
+            color: #fff;
         }
     }
 }

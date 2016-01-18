@@ -1629,22 +1629,24 @@ textarea:-ms-input-placeholder {
 }
 .login-section {
   display: block;
-  background: rgba(70, 82, 157, 0.5);
-  filter: alpha(opacity=50);
+  background: rgba(70, 82, 157, 0.8);
+  background: #8d99ce;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
   border-radius: 10px;
   padding: 30px 62px;
-  margin-top: 24px;
+  margin-top: 64px;
 }
 .login-section .login-iden {
   width: 356px;
-  height: 42px;
+  height: 48px;
   display: block;
 }
 .login-section .login-iden span {
   background: #5b6399;
   display: inline-block;
   width: 130px;
-  line-height: 42px;
+  line-height: 48px;
   font-size: 18px;
   color: #fff;
   text-align: center;
@@ -1654,7 +1656,9 @@ textarea:-ms-input-placeholder {
   display: inline-block;
   width: 226px;
   float: left;
-  height: 42px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
   outline: none;
   background: #fff;
   color: #e6a640;
@@ -1667,25 +1671,41 @@ textarea:-ms-input-placeholder {
   color: #e6a640;
   font-size: 18px;
   border: none;
+  height: 48px;
+  line-height: 48px;
 }
 .login-section .login-input {
   display: block;
   width: 356px;
-  height: 42px;
+  height: 48px;
   background-color: #b3bee2;
   margin-top: 24px;
 }
 .login-section .login-input input {
   display: inline-block;
   margin-left: 48px;
-  height: 42px;
+  height: 48px;
+  line-height: 48px;
   background: none;
   border: none;
   outline: none;
   font-size: 18px;
   color: #fff;
 }
-.login-section a {
+.login-section .login-input input::-webkit-input-placeholder {
+  color: #6b74b0;
+}
+.login-section .login-input input:-moz-placeholder {
+  color: #6b74b0;
+}
+.login-section .login-input input::-moz-placeholder {
+  color: #6b74b0;
+}
+.login-section .login-input input:-ms-input-placeholder {
+  color: #6b74b0;
+}
+.login-section > a {
+  display: inline-block;
   margin-top: 12px;
   color: #fff;
 }
@@ -1697,11 +1717,39 @@ textarea:-ms-input-placeholder {
   background: url(../../images/icon-key.png) 10px center no-repeat;
   background-color: #b3bee2;
 }
+.login-section .login-keyconfirm {
+  background: url(../../images/icon-keyconfirm.png) 10px center no-repeat;
+  background-color: #b3bee2;
+}
 .login-section .login-button {
   display: block;
+  margin-top: 44px;
 }
 .login-section .login-button a {
   display: inline-block;
-  height: 42px;
   border-radius: 3px;
+  font-size: 18px;
+  padding: 14px 42px;
+  color: #fff;
+}
+.login-section .login-button .btn-login {
+  background: #e6a640;
+}
+.login-section .login-button .btn-register {
+  background: #64499a;
+  float: right;
+}
+.login-section .register-button {
+  display: inline-block;
+  margin-top: 24px;
+  background: #e6a640;
+  text-align: center;
+  margin-left: 68px;
+  font-size: 18px;
+  border-radius: 3px;
+  padding: 14px 74px;
+}
+.login-section .register-button a {
+  display: inline-block;
+  color: #fff;
 }
